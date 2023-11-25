@@ -184,6 +184,13 @@ const tel = document.querySelector('input[type = "tel"]')
 const inputMaskTel = new Inputmask('+380 (99) 999-99-99');
 inputMaskTel.mask(tel)
 
+const validation = new JustValidate('form', {
+  tooltip: {
+    position: 'top',
+  },
+  
+});
+
 validation
   .addField('#name', [
     {
