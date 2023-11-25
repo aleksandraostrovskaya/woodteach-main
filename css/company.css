@@ -1,0 +1,110 @@
+.tabwrapper {
+  display: flex;
+  gap: 56px;
+}
+.tabblock {
+  flex-shrink: 0;
+  flex-basis: 250px;
+}
+.tabblock__title {
+  color: #333;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+  padding-left: 30px;
+}
+.tabblock__items {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.tabblock__item {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.tabblock__item a {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tabblock__item_active {
+  color: #fff;
+  background-color: #f88500;
+  padding: 10px 30px 10px 30px;
+}
+.tabcontent {
+  margin-bottom: 70px;
+  flex-grow: 1;
+}
+.tabcontent__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.tabcontent__title {
+  color: #333;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+.tabcontent__text {
+  max-width: 799px;
+  line-height: 170%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.tabcontent-img {
+  margin-bottom: 35px;
+}
+.tabcontent__card-img {
+}
+.tabcontent__card {
+  max-width: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.tabcontent__card-title {
+  color: #333;
+  font-size: 19px;
+  font-weight: 800;
+}
+.tabcontent__card-text {
+  color: #333;
+  text-align: center;
+  font-size: 13px;
+  line-height: 170%;
+}
+.tabcontent__card-link {
+  color: #333;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 170%; /* 25.5px */
+  text-decoration-line: underline;
+}
+.tabcontent_advantages {
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

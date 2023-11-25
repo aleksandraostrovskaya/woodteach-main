@@ -1,0 +1,113 @@
+
+.header-page .menu__logo-text1{
+	color: #000;
+}
+.header-page .menu__logo-text2{
+	color: #6F7A8B;
+	opacity: 0.75;
+}
+.header-page .menu__items-link{
+	color: #333;
+}
+.header-page .menu__items-link:hover{
+	background-color: #F88500;
+	border-radius: 0 5px;
+	color: #fff;
+}
+.header-page .menu__links-a-active{
+	background-color: #F88500;
+	padding: 7px 15px;
+	border-radius: 0 5px;
+	color: #fff;
+}
+.header-page .menu__social{
+	border: none;
+	background-color: transparent;
+}
+.header-page .menu{
+	position: static;
+	margin-top: 33px;
+	padding-bottom: 70px;
+}
+.services {
+	margin-bottom: 50px;
+}
+.services__title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: normal;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.services__items-card:hover .card-left__title{
+	color: #F88500;
+	text-decoration: underline;
+}
+.services__text {
+	color:  #999;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 170%; /* 25.5px */
+	max-width: 550px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.services__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	row-gap: 20px;
+	margin-bottom: 121px;
+}
+.services__items-card {
+	display: flex;
+	position: relative;
+}
+.services__items-card-left {
+}
+.card-left__title {
+	color: #333;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	margin-top: 38px;
+	transition: all 0.5s ease-in-out;
+}
+.card-left__text {
+	max-width: 220px;
+	color: #7E7E7E;
+	line-height: 170%; /* 23.8px */
+	font-size: 14px;
+}
+.services__items-card:hover::before{
+	content: "";
+	display: inline-block;
+	background-color: #F88500;
+	width: 3px;
+	height: 30px;
+	position: absolute;
+	top: 40%;
+	left: -32px;
+
+}
+
+.services__items-card-right {
+}
+.card-right__img {
+}
+.services__btn{
+	color: #FFF;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 12px 30px;
+	background-color: #F88500;
+	border-radius: 0px 5px;
+	margin: 0 auto;
+	display: block;
+}

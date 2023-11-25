@@ -1,0 +1,115 @@
+.footer{
+	background-color: rgba(23, 26, 26, 1) ;
+}
+
+.footer .container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.footer__column-logo {
+	display: block;
+	padding-bottom: 40px;
+}
+.footer__column-title{
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 21px;
+	letter-spacing: 0em;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 47px;
+}
+.create-line{
+	position: relative;
+	bottom: 23px;
+	border-radius: 0px 5px;
+	width: 25px;
+  border-top: 3px solid rgba(248, 133, 0, 1);
+}
+.footer__column-text{
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0em;
+	max-width: 344px;
+}
+.footer__column-li{
+	padding-bottom: 14px;
+}
+.footer__column-link:hover{
+	color: #F88500;
+	text-decoration: underline;
+}
+.footer__column-li:last-child{
+	padding-bottom: 0px;
+}
+.footer__column-link{
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 0em;
+}
+.column-text-social {
+	max-width: 265px;
+	padding-bottom: 35px;
+}
+.column-title{
+	padding-bottom: 20px;
+}
+.footer__column-social{
+	display: flex;
+	gap: 12px;
+}
+.footer__social-link {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	width: 40px;
+	height: 40px;
+	border-radius: 0px 5px;
+	transition: all 0.3s ease-in-out;
+}
+.footer__social-link:hover{
+	background-color: rgba(248, 133, 0, 1);
+	border: none;
+}
+.footer__social-link:hover svg path{
+	fill: #fff;
+
+}
+.footer__social-svg path{
+	fill:rgba(255, 255, 255, 0.5);
+}
+.footer__social-svg{
+	width: 19px;
+	height: 17px;
+}
+.go-top{
+	position: fixed;
+	left: 94%;
+	top: 91%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	background: #F88500;
+	border-radius: 0px 5px;
+  display: none;
+	cursor: pointer;
+}
+.go-top--show {
+	display: block;
+}
+.go-top::after{
+	content: "";
+	display: block;
+	background-image: url(../img/go-top.svg);
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}

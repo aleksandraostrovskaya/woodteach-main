@@ -1,0 +1,143 @@
+.about {
+	padding-top: 80px;
+}
+.about .container{
+	display: flex;
+	justify-content: space-between;
+	gap: 80px;
+}
+
+.about__left {
+}
+.about__left-img {
+	
+}
+.about__left-box{
+	position: relative;
+	bottom: 155px;
+	left: 225px;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: start;
+	display: flex;
+	width: 240px;
+	height: 95px;
+	background-color: rgba(32, 35, 40, 0.9);
+	gap: 10px;
+}
+.about__left-box-number{
+	color: #FFF;
+	font-family: Roboto;
+	font-size: 52px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	flex-shrink: 0;
+	padding-left: 25px;
+}
+.about__left-box-text{
+	color: #FFF;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	flex-shrink: 0;
+}
+
+
+.about__right {
+}
+.about__right-title {
+	color: #333;
+	font-size: 29px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	max-width: 419px;
+	margin-bottom: 62px;
+}
+.about__right-title::before{
+	content: '\\\\ коротко о нас';
+	color: #F88500;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 5px;
+
+}
+.about__right-text {
+	color: #333;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 170%; /* 23.8px */
+	margin-bottom: 37px;
+}
+.about__right-block {
+	display: flex;
+	justify-content: space-between;
+}
+.about__right-block-item {
+}
+.about__right-block-item-title {
+	color: #333;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	
+	max-width: 82px;
+	display: flex;
+	gap: 11px;
+}
+.title__decor-left{
+	margin-bottom: 19px;
+}
+.title__decor-right{
+	margin-bottom: 28px;
+}
+.title__decor-left::before{
+	content: url('../img/eco.png');
+	position: relative;
+	bottom: 5px;
+	
+}
+.title__decor-right::before{
+	content: url('../img/wood-cut.png');
+	
+}
+.about__right-block-item-text {
+	color: #333;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 170%; /* 23.8px */
+	margin-bottom: 15px;
+	max-width: 266px;
+}
+.about__right-block-item-link {
+	color: #333;
+font-size: 15px;
+font-style: normal;
+font-weight: 800;
+line-height: 170%; /* 25.5px */
+text-decoration-line: underline;
+}
+
+.dot__decor{
+	container-type: inline-size;
+	width: 30px;
+  height: 30px;
+}
+.dot__decor::before{
+		content: "";
+		display: block;
+		height: 100%;
+		background:
+			radial-gradient(circle at 25%, rgba(248, 133, 0, 1) 8cqi, transparent calc(8cqi + 1px)),
+			radial-gradient(circle at 50%, rgba(248, 133, 0, 1) 8cqi, transparent calc(8cqi + 1px)),
+			radial-gradient(circle at 75%, rgba(248, 133, 0, 1) 8cqi, transparent calc(8cqi + 1px));
+}

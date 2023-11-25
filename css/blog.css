@@ -1,0 +1,115 @@
+.blog{
+	padding-bottom: 50px;
+}
+.blog__right-div{
+	background-image: url(../img/image-blog.png);
+	min-height: 410px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	border-radius: 0px 5px;
+}
+
+.blog__right-div::before{
+	content: "";
+	display: block;
+	background: rgba(244, 248, 255, 0.9);
+	border-radius: 0px 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.blog__right{
+	border-radius: 0px 5px;
+	padding: 15px;
+	flex-basis: 360px;
+	border: 1px solid #EEE;
+}
+.blog__wrapper{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.blog__left{
+	max-width: calc(100% - 380px);
+}
+.blog__right-link{
+	color: #333;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 140%; /* 25.2px */
+	text-decoration-line: underline;
+	max-width: 180px;
+	text-align: center;
+	z-index: 2;
+}
+.swiper-slide__blog{
+	padding: 15px 15px 26px 15px;
+	border: 1px solid #EEE;
+	border-radius: 0px 5px;
+}
+.swiper-slide-top{
+	position: relative;
+}
+.blog__time{
+	padding: 4px 10px 5px 10px;
+	background-color: #F88500;
+	color: #FFF;
+	font-family: Roboto;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	border-radius: 0px 5px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.swiper-slide__title{
+	margin-top: 24px;
+	margin-bottom: 20px;
+	padding-left: 12px;
+	color:  #333;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 125%; /* 22.5px */
+	text-transform: uppercase;
+	border-left: 3px solid #F88500;
+}
+.blog__title{
+	color:  #333;
+	text-align: center;
+	font-size: 29px;
+	font-weight: 800;
+	margin-top: 74px;
+	margin-bottom: 45px;
+}
+.swiper-pagination__blog{
+	position: unset;
+	margin-top: 15px;
+}
+.swiper-pagination-bullet{
+	border-radius: 0px 5px;
+	background: rgb(118, 118, 119);
+	width: 25px;
+	height: 5px;
+}
+.swiper-pagination-bullet-active{
+	background-color:rgba(248, 133, 0, 1) ;
+}
+.swiper-slide__link{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 16px;
+	color: #333;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 170%; /* 25.5px */
+	text-decoration-line: underline;
+}
