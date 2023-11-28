@@ -37,24 +37,6 @@ if (tabs.length > 0) {
   });
 }
 
-const form = document.querySelector('.map__form');
-if (form !== null) {
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    // const name = event.target.name.value;
-    // const tel = event.target.tel.value;
-    // const text = event.target.text.value;
-    // const userData = {
-    //   name,
-    //   tel,
-    //   text,
-    // };
-    // const userDataJson = JSON.stringify(userData);
-    const formData = new FormData(form)
-    fetch
-  });
-}
 
 const goTopBtn = document.querySelector('.go-top');
 if (goTopBtn !== null) {
@@ -180,8 +162,56 @@ if (swiper !== null) {
   });
 }
 
+
+const form = document.querySelector('.map__form');
 const tel = document.querySelector('input[type = "tel"]')
 const inputMaskTel = new Inputmask('+380 (99) 999-99-99');
+const TOKEN = '6678647392:AAGSvx3Bm_8vmFocJK6l1caO9_VbhNO36rk';
+const CHAT_ID = "-1001740011161";
+const URI_APi = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+const success = document.getElementById('success')
+
+if (form !== null) {
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    
+    let message = `<b>Заявка с сайта</b>\n`;
+    message += `<b>Имя:</b> ${this.name.value}\n`;
+    message += `<b>Номер:</b> ${this.tel.value}\n`;
+    message += `<b>Сообщение:</b> ${this.text.value}`
+
+    axios.post(URI_APi, {
+      chat_id: CHAT_ID,
+      parse_mode: 'html',
+      text: message
+    })
+    .then((res) => {
+      this.name.value = ""
+      this.tel.value = ""
+      this.text.value = ""
+      success.innerHTML = "Спасибо Толик, сейчас посмотрю :)"
+      success.style.display = "block"
+    })
+    .catch((err) => {
+      console.warn(err)
+    })
+    .finally(() => {
+      console.log('end')
+    })
+
+    // const name = event.target.name.value;
+    // const tel = event.target.tel.value;
+    // const text = event.target.text.value;
+    // const userData = {
+    //   name,
+    //   tel,
+    //   text,
+    // };
+    // const userDataJson = JSON.stringify(userData);
+    // const formData = new FormData(form)
+    
+  });
+}
 inputMaskTel.mask(tel)
 
 const validation = new JustValidate('form', {
