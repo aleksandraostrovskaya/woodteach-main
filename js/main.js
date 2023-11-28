@@ -189,7 +189,7 @@ if (form !== null) {
       this.name.value = ""
       this.tel.value = ""
       this.text.value = ""
-      success.innerHTML = "Спасибо Толик, сейчас посмотрю :)"
+      success.innerHTML = "Спасибо, сообщение отправлено :)"
       success.style.display = "block"
     })
     .catch((err) => {
