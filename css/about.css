@@ -5,16 +5,18 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 80px;
+	margin-bottom: 50px;
 }
 
 .about__left {
+	position: relative;
 }
 .about__left-img {
 	
 }
 .about__left-box{
-	position: relative;
-	bottom: 155px;
+	position: absolute;
+	bottom: 67px;
 	left: 225px;
 	border-radius: 5px;
 	align-items: center;

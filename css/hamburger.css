@@ -1,0 +1,40 @@
+.header__burger-btn{
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  display: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.header__burger-btn span{
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  left: 5px;
+  transition: background-color .2s, opacity .25s, transform .5s;
+}
+.header__burger-btn span:nth-child(1){
+  transform: translateY(-10px);
+}
+.header__burger-btn span:nth-child(2){
+  
+}
+.header__burger-btn span:nth-child(3){
+  transform: translateY(10px);
+}
+
+.header.open .header__burger-btn span:nth-child(1){
+  transform: translateY(0) rotate(45deg);
+}
+.header.open .header__burger-btn span:nth-child(2){
+  opacity: 0;
+}
+.header.open .header__burger-btn span:nth-child(3){
+  transform: translateY(0) rotate(-45deg);
+}

@@ -149,9 +149,23 @@ const swiper = document.querySelector('.mySwiper');
 if (swiper !== null) {
   new Swiper(swiper, {
     spaceBetween: 5,
-    slidesPerView: 8,
+    slidesPerView: 2,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      480: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      992: {
+        slidesPerView: 6,
+      },
+      1200: {
+        slidesPerView: 8,
+      },
+    },
   });
   var swiper2 = new Swiper('.mySwiper2', {
     spaceBetween: 5,
@@ -165,11 +179,12 @@ if (swiper !== null) {
 
 const form = document.querySelector('.map__form');
 const tel = document.querySelector('input[type = "tel"]')
-const inputMaskTel = new Inputmask('+380 (99) 999-99-99');
+
 const TOKEN = '6678647392:AAGSvx3Bm_8vmFocJK6l1caO9_VbhNO36rk';
 const CHAT_ID = "-1001740011161";
 const URI_APi = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 const success = document.getElementById('success')
+
 
 if (form !== null) {
   form.addEventListener('submit', function (event) {
@@ -211,17 +226,21 @@ if (form !== null) {
     // const formData = new FormData(form)
     
   });
-}
-inputMaskTel.mask(tel)
+  let inputMaskTel = '';
+  if (inputMaskTel !== null) {
+    inputMaskTel = new Inputmask('+380 (99) 999-99-99')
+    inputMaskTel.mask(tel)
+  }
+  
 
-const validation = new JustValidate('form', {
+  const validation = new JustValidate('form', {
   tooltip: {
     position: 'top',
   },
   
 });
 
-validation
+  validation
   .addField('#name', [
     {
       rule: 'required',
@@ -239,3 +258,12 @@ validation
     }
     
   ])
+}
+
+
+  const hamburger = document.querySelector(".header__burger-btn");
+  if (hamburger !== null) {
+		hamburger.addEventListener("click", function() {
+      document.querySelector('.header').classList.toggle('open')
+		})
+  };

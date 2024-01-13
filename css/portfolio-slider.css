@@ -78,3 +78,32 @@
 	font-weight: 800;
 	text-transform: uppercase;
 }
+.describe__box{
+	display: flex;
+	justify-content: space-between;
+	background-color: #FAFAFA;
+	padding: 40px 30px 40px 30px;
+	gap: 30px;
+}
+.describe__box-left{
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.describe__box-right{
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	font-family: Roboto;
+
+}
+.describe__box-left-text{
+	font-weight: 500;
+	color: #666;
+}
+
+.describe__box-right-text strong{
+	color: #444;
+}
